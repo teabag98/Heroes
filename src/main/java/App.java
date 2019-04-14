@@ -2,8 +2,10 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
+
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
+
 import static spark.Spark.*;
 
 public class App {
@@ -12,7 +14,7 @@ public class App {
         String layout = "templates/layout.vtl";
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-          model.put("heroes", request.session().attribute("heroes"));
+            model.put("heroes", request.session().attribute("heroes"));
             model.put("template", "templates/index.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
@@ -21,16 +23,15 @@ public class App {
         post("/heroes", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
 
-            ArrayList<Task> tasks = request.session().attribute("tasks");
-            if (tasks == null) {
-                tasks = new ArrayList<Task>();
-                request.session().attribute("tasks", tasks);
+            ArrayList<Hero> heroes = request.session().attribute("tasks");
+            if (heroes == null) {
+                heroes = new ArrayList<Hero>();
+                request.session().attribute("heroes", heroes);
             }
 
             String description = request.queryParams("description");
-            Task newTask = new Task(description);
-            tasks.add(newTask);
-
+            Hero newHero = new Hero(description);
+            heroes.add(newHero);
             model.put("template", "templates/success.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
