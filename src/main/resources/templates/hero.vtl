@@ -1,8 +1,8 @@
-#if ($heros.size()> 0)
+#if ($heroes.size()> 0)
     <ul>
-        #foreach ($hero in $heros)
+        #foreach ($hero in $heroes)
             <li>
-                <a href="/heros/$hero.getId()">
+                <a href="/heroes/$hero.getId()">
                     <div class="card row">
                         <div class="col-md-4">
                             $hero.getName()

@@ -45,6 +45,7 @@ public class Squad {
     public void addHero(Hero hero) {
         mHeros.add(hero);
     }
+
     public static Squad find(int id) {
         return instances.get(id - 1);
     }
