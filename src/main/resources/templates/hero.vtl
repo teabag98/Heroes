@@ -3,14 +3,14 @@
         #foreach ($hero in $heros)
             <li>
                 <a href="/heros/$hero.getId()">
-                    <div class="row text-squad-rw">
-                        <div class="col-md-3">
+                    <div class="card row">
+                        <div class="col-md-4">
                             $hero.getName()
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             $hero.getAge()
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             $hero.getPower()
                         </div>
                         <div class="col-md-6">
@@ -19,15 +19,17 @@
                     </div>
                 </a>
             </li>
-            <hr noshade="noshade">
+            <hr>
+           < br
+
         #end
     </ul>
 #else
-    <p>No Squad added!</p>
+    <p>Please add squad</p>
 #end
 </div>
 </table>
 
 <div class="btn btn-lg">
-<a href="/squads/new">New Squad</a>
+<a href="/squads/new">Add New Squad</a>
 </div>
