@@ -1,0 +1,35 @@
+#if ($heros.size()> 0)
+    <ul>
+        #foreach ($hero in $heros)
+            <li>
+                <a href="/heros/$hero.getId()">
+                    <div class="card row">
+                        <div class="col-md-4">
+                            $hero.getName()
+                        </div>
+                        <div class="col-md-4">
+                            $hero.getAge()
+                        </div>
+                        <div class="col-md-4">
+                            $hero.getPower()
+                        </div>
+                        <div class="col-md-6">
+                            $hero.getWeakness()
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <hr>
+           < br
+
+        #end
+    </ul>
+#else
+    <p>Please add squad</p>
+#end
+</div>
+</table>
+
+<div class="btn btn-lg">
+<a href="/squads/new">Add New Squad</a>
+</div>

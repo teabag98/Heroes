@@ -1,0 +1,25 @@
+         #if ($squads.size()> 0)
+           <ul>
+             #foreach ($squad in $squads)
+               <li><a href="/squads/$squad.getId()">
+                   <div class="row text-squad-rw">
+                       <div class="col-md-3">
+                           $squad.getName()
+                       </div>
+                       <div class="col-md-3">
+                          $squad.getSize()
+                       </div>
+                       <div class="col-md-6">
+                          $squad.getCause()
+                       </div>
+                   </div>
+               </a></li>
+               <hr>
+             #end
+           </ul>
+         #else
+          <p>No Squad!</p>
+         #end
+     </table>
+
+    <a href="/squads/new"><button class="btn btn-success">Add new squad</button></a>
