@@ -72,10 +72,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="905">
+            <state relative-caret-position="1170">
               <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -113,7 +113,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Hero.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="735">
@@ -243,6 +243,31 @@
               <item name="Heroes" type="b2602c69:ProjectViewProjectNode" />
               <item name="Heroes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="Heroes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Heroes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Heroes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Heroes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Heroes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Heroes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Heroes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Heroes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -304,6 +329,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="685" y="27" width="679" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3823065" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -408,24 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="905">
-          <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#457#473#0" expanded="true" />
-            <element signature="e#733#749#0" expanded="true" />
-            <element signature="e#1009#1025#0" expanded="true" />
-            <element signature="e#1332#1348#0" expanded="true" />
-            <element signature="e#1914#1930#0" expanded="true" />
-            <element signature="e#2315#2331#0" expanded="true" />
-            <element signature="e#2720#2736#0" expanded="true" />
-            <element signature="e#3041#3057#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SquadTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -482,6 +490,24 @@
             <element signature="e#866#867#0" expanded="true" />
             <element signature="e#900#901#0" expanded="true" />
             <element signature="e#933#934#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#457#473#0" expanded="true" />
+            <element signature="e#733#749#0" expanded="true" />
+            <element signature="e#1009#1025#0" expanded="true" />
+            <element signature="e#1332#1348#0" expanded="true" />
+            <element signature="e#1914#1930#0" expanded="true" />
+            <element signature="e#2315#2331#0" expanded="true" />
+            <element signature="e#2720#2736#0" expanded="true" />
+            <element signature="e#3041#3057#0" expanded="true" />
           </folding>
         </state>
       </provider>

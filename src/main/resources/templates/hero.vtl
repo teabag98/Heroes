@@ -1,0 +1,33 @@
+#if ($heros.size()> 0)
+    <ul>
+        #foreach ($hero in $heros)
+            <li>
+                <a href="/heros/$hero.getId()">
+                    <div class="row text-squad-rw">
+                        <div class="col-md-3">
+                            $hero.getName()
+                        </div>
+                        <div class="col-md-3">
+                            $hero.getAge()
+                        </div>
+                        <div class="col-md-6">
+                            $hero.getPower()
+                        </div>
+                        <div class="col-md-6">
+                            $hero.getWeakness()
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <hr noshade="noshade">
+        #end
+    </ul>
+#else
+    <p>No Squad added!</p>
+#end
+</div>
+</table>
+
+<div class="btn btn-lg">
+<a href="/squads/new">New Squad</a>
+</div>
