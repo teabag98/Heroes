@@ -21,14 +21,14 @@ public class App {
 
         get("/squads/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("template", "templates/squadForm.vtl");
+            model.put("template", "templates/Squad-form.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
         get("/squads", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("squads", Squad.all());
-            model.put("template", "templates/squadList.vtl");
+            model.put("template", "templates/AllSquads.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
@@ -39,8 +39,7 @@ public class App {
             int size = Integer.parseInt(request.queryParams("squad-size"));
             String cause = request.queryParams("squad-cause");
             Squad newSquad = new Squad(name, size, cause);
-            model.put("template", "templates/success.vtl");
-
+            model.put("template", "templates/squad.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
@@ -56,7 +55,7 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             Squad squad = Squad.find(Integer.parseInt(request.params(":id")));
             model.put("squad", squad);
-            model.put("template", "templates/squad-hero-form.vtl");
+            model.put("template", "templates/heroes-form.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
@@ -77,7 +76,7 @@ public class App {
             String weakness = request.queryParams("weakness");
             Hero newHero = new Hero(name, age, power, weakness);
             squad.addHero(newHero);
-            model.put("template", "templates/herosuccess.vtl");
+            model.put("template", "templates/Hero-added-message.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 

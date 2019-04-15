@@ -21,9 +21,11 @@ public class Hero {
         mId = instances.size();
     }
 
-    public String getName(){
+    public String getName() {
+
         return mName;
     }
+
     public int getAge() {
         return mAge;
     }
@@ -44,8 +46,5 @@ public class Hero {
         return instances;
     }
 
-    public static void clear() {
-        instances.clear();
-    }
 
 }

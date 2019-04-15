@@ -1,10 +1,10 @@
 
 <h1>$squad.getName() Heroes:</h1>
 
-#if ($squad.getHeros().size()> 0)
+#if ($squad.getHeroes().size()> 0)
 <ol>
-  #foreach($hero in $squad.getHeros())
-   <li><a href="/heros/$hero.getId()">$hero.getName()</a></li>
+  #foreach($hero in $squad.getHeroes())
+   <li><a href="/heroes/$hero.getId()">$hero.getName()</a></li>
   #end
 </ol>
 #else

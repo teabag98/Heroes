@@ -49,7 +49,7 @@ public class Squad {
         return instances.get(id - 1);
     }
 
-    public List<Hero> getHeros() {
+    public List<Hero> getHeroes() {
         return mHeros;
     }
 
