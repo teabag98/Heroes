@@ -60,14 +60,14 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
-        get("/squad-heros", (request, response) -> {
+        get("/squad-heroes", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("heros", Hero.all());
+            model.put("heroes", Hero.all());
             model.put("template", "templates/hero.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
-        post("/squad-heros", (request, response) -> {
+        post("/squad-heroes", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             request.session().attributes();
             Squad squad = Squad.find(Integer.parseInt(request.queryParams("squadid")));
