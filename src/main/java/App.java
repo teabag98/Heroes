@@ -12,7 +12,7 @@ public class App {
     public static void main(String[] args) {
         String layout = "templates/layout.vtl";
         staticFileLocation("/public");
-
+          port(8080);
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("template", "templates/index.vtl");

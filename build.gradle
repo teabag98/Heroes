@@ -8,6 +8,7 @@ mainClassName = "App"
 
 repositories {
     mavenCentral()
+    
 }
 
 dependencies {
