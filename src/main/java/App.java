@@ -66,10 +66,10 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
-        post("/squad-heroes", (request, response) -> {
+        post("/heroes", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             request.session().attributes();
-            Squad squad = Squad.find(Integer.parseInt(request.queryParams("squadid")));
+            Squad squad = Squad.find(Integer.parseInt(request.queryParams("squadId")));
             String name = request.queryParams("name");
             int age = Integer.parseInt(request.queryParams("age"));
             String power = request.queryParams("power");
