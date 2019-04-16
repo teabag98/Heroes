@@ -1,1 +1,1 @@
-web: ./build/install/Heroes/bin/Heroes
+web: ./build/install/heroes/bin/heroes
