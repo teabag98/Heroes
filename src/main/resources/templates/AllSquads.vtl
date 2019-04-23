@@ -1,16 +1,22 @@
-
+<hr>
+<h3 style="color:white">Click squad to add new hero</h3>
+<hr>
         #if ($squads.size()> 0)
            <ul>
              #foreach ($squad in $squads)
                <li><a href="/squads/$squad.getId()">
-                   <div class="row text-squad-rw">
-                       <div class="col-md-3">
+
+                   <div class="row card text-squad-rw">
+                       <div class="col-md-12">
+                          <p>SQUAD NAME :</p>
                            $squad.getName()
                        </div>
-                       <div class="col-md-3">
+                       <div class="col-md-12">
+                       <p>SQUAD SIZE :</p>
                           $squad.getSize()
                        </div>
-                       <div class="col-md-6">
+                       <div class="col-md-12">
+                       <p>CAUSE :</p>
                           $squad.getCause()
                        </div>
                    </div>

@@ -85,6 +85,7 @@ public class App {
             Hero newHero = new Hero(name, age, power, weakness);
             squad.addHero(newHero);
             model.put("template", "templates/Hero-added-message.vtl");
+
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 

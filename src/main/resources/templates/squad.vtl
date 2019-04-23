@@ -1,11 +1,11 @@
 
 
-#if ($Squad.getHeroes().size()> 0)
-<p>
-  #foreach($hero in $Squad.getHeroes())
-   <p><a href="/heroes/$hero.getId()">$hero.getName()</a></p>
+#if ($squad.getHeroes().size()> 0)
+<p style="color:black";>
+  #foreach($hero in $squad.getHeroes())
+   <p><a href="/heroes/$hero.getId()"><div class="card"> $hero.getName()<hr> $hero.getAge() <hr>  $hero.getWeakness()</div></a></p>
   #end
-<p>
+</p>
 #else
  <p> <em></em></p>
 #end
